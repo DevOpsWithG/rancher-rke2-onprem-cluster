@@ -1,4 +1,5 @@
 
+
 ```markdown
 # 🚀 RKE2 Kubernetes Cluster Setup on AWS EC2
 
@@ -208,6 +209,7 @@ export PATH=$PATH:/var/lib/rancher/rke2/bin
 ---
 
 ## 👨‍💻 Author
+
 Ganesh - DevOps Engineer
 
 [1]: https://docs.rke2.io/install/quickstart?utm_source=chatgpt.com "Quick Start | RKE2"
