@@ -1,8 +1,3 @@
-Here’s a **clean, professional `README.md`** for your setup—based on what you actually did + aligned with the official [RKE2 Quickstart Documentation](https://docs.rke2.io/install/quickstart?utm_source=chatgpt.com).
-
-You can copy this directly into your repo 👇
-
----
 
 ```markdown
 # 🚀 RKE2 Kubernetes Cluster Setup on AWS EC2
