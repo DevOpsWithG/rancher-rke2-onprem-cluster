@@ -1,6 +1,5 @@
 
 
-```markdown
 # 🚀 RKE2 Kubernetes Cluster Setup on AWS EC2
 
 This repository documents the step-by-step setup of a multi-node Kubernetes cluster using Rancher RKE2 on AWS EC2 instances.
