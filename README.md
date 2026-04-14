@@ -51,8 +51,8 @@ EC2 Instance 2 (Worker)
 
 ```bash
 curl -sfL https://get.rke2.io | sudo sh -
-sudo systemctl enable rke2-server
-sudo systemctl start rke2-server
+sudo systemctl enable rke2-server.service
+sudo systemctl start rke2-server.service
 ````
 
 ### Verify status:
@@ -78,6 +78,7 @@ RKE2 installs kubectl internally (not in PATH).
 ```bash
 export KUBECONFIG=/etc/rancher/rke2/rke2.yaml
 export PATH=$PATH:/var/lib/rancher/rke2/bin
+sudo chmod 644 /etc/rancher/rke2/rke2.yaml
 ```
 
 > kubeconfig is stored at `/etc/rancher/rke2/rke2.yaml` by default. ([docs.rke2.io][1])
@@ -95,6 +96,7 @@ curl -sfL https://get.rke2.io | sudo INSTALL_RKE2_TYPE="agent" sh -
 ## ⚙️ Step 5: Configure Agent
 
 ```bash
+sudo systemctl enable rke2-agent.service
 sudo mkdir -p /etc/rancher/rke2
 sudo vi /etc/rancher/rke2/config.yaml
 ```
@@ -113,8 +115,8 @@ token: <NODE_TOKEN>
 ## ▶️ Step 6: Start Agent
 
 ```bash
-sudo systemctl enable rke2-agent
-sudo systemctl start rke2-agent
+
+sudo systemctl start rke2-agent.service
 ```
 
 ---
